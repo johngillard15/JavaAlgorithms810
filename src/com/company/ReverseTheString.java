@@ -14,7 +14,7 @@ public class ReverseTheString {
         String strReversed = new StringBuilder(str.replaceAll(" ", "")).reverse().toString();
 
         /*
-         * 1. reverse and get correct spacing
+         * 1. get correct spacing
          * 2. get correct letter cases
          */
 
