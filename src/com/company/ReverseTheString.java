@@ -9,7 +9,7 @@ public class ReverseTheString {
      * - Spaces must be kept in the same order as the original string (see example #3).
      */
 
-    public static String reverseString(String str){
+    public static String specialReverseString(String str){
         // reverse with no spaces
         String strReversed = new StringBuilder(str.replaceAll(" ", "")).reverse().toString();
 
