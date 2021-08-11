@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * <h1>Java Intermediate Algorithms </h1>
  *
- * <p>Create a new InteliJ project called ( JavaAlgorithms810 ).
+ * <p>Create a new IntelliJJ project called ( JavaAlgorithms810 ).
  *  Complete the following algorithms where each algorithm is store in a new class and the solution is in a method
  *  called "run".
  *  Spend the first 60 minutes of class working on the first two on your own. Then work on the last two as a group.
