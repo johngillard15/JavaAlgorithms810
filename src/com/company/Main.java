@@ -31,10 +31,20 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("ArrayOfMultiples:");
-        System.out.println(Arrays.toString(ArrayOfMultiples.arrayOfMultiples(7, 5)));
+        System.out.println(Arrays.toString(ArrayOfMultiples.arrayOfMultiples(7, 5))); // ➞ [7, 14, 21, 28, 35]
+        System.out.println(Arrays.toString(ArrayOfMultiples.arrayOfMultiples(12, 10))); // ➞ [12, 24, 36, 48, 60, 72, 84,  96, 108, 120]
+        System.out.println(Arrays.toString(ArrayOfMultiples.arrayOfMultiples(7, 5))); // ➞ [17, 34, 51, 68, 85, 102]
 
         System.out.println("\nPerfectSquarePatch:");
-        System.out.println(Arrays.deepToString(PerfectSquarePatch.intAsSquare(3)));
+        int[][] squareArr = PerfectSquarePatch.intAsSquare(3);
+        System.out.printf("\n%s\n", Arrays.deepToString(squareArr).replace("], ", "]\n").replace("[[", "[").replace("]]", "]"));
+        squareArr = PerfectSquarePatch.intAsSquare(5);
+        System.out.printf("\n%s\n", Arrays.deepToString(squareArr).replace("], ", "]\n").replace("[[", "[").replace("]]", "]"));
+        squareArr = PerfectSquarePatch.intAsSquare(1);
+        System.out.printf("\n%s\n", Arrays.deepToString(squareArr).replace("], ", "]\n").replace("[[", "[").replace("]]", "]"));
+//        System.out.println(Arrays.deepToString(PerfectSquarePatch.intAsSquare(3)));
+//        System.out.println(Arrays.deepToString(PerfectSquarePatch.intAsSquare(5)));
+//        System.out.println(Arrays.deepToString(PerfectSquarePatch.intAsSquare(1)));
 
         System.out.println("\nReverseTheString:");
         System.out.println(ReverseTheString.reverseString("Edabit")); // ➞ "Tibade"
