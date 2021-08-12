@@ -10,29 +10,16 @@ public class ReverseTheString {
      * - Spaces must be kept in the same order as the original string (see example #3).
      */
     public static String specialReverseString(String str){
-        // reverse with no spaces
-        String strReversed = new StringBuilder(str.replaceAll(" ", "")).reverse().toString();
+        String strReversed = new StringBuilder(str.replaceAll(" ", "")).reverse().toString().toLowerCase();
 
-        /*
-         * 1. get correct spacing
-         * 2. get correct letter cases
-         */
-
-        // put spaces at correct position
-        for(int i = 0; i < str.length(); i++){
-            if(Character.isWhitespace(str.charAt(i)))
-                strReversed = strReversed.substring(0, i) + " " + strReversed.substring(i);
-        }
-
-        // match letter cases
-        strReversed = strReversed.toLowerCase();
         for(int i = 0; i < str.length(); i++){
             char c = str.charAt(i);
-            if(Character.isUpperCase(c)){
-                char cNew = Character.toUpperCase(strReversed.charAt(i));
-                StringBuilder strTemp = new StringBuilder(strReversed);
-                strTemp.setCharAt(i, cNew);
-                strReversed = strTemp.toString();
+
+            if(Character.isWhitespace(c))
+                strReversed = strReversed.substring(0, i) + " " + strReversed.substring(i);
+            else if(Character.isUpperCase(c)){
+                c = Character.toUpperCase(strReversed.charAt(i));
+                strReversed = strReversed.substring(0, i) + c + strReversed.substring(i + 1);
             }
         }
 
