@@ -8,7 +8,6 @@ public class AtbashCipher {
      * Create a function that takes a string and applies the Atbash cipher to it.
      */
     public static String atbash(String str){
-        //char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         StringBuilder encrypted = new StringBuilder();
 
