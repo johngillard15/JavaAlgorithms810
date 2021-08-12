@@ -7,7 +7,7 @@ public class AtbashCipher {
      * in the alphabet: A <=> Z; B <=> Y; C <=> X; etc.
      * Create a function that takes a string and applies the Atbash cipher to it.
      */
-    public static String atbash(String str){
+    public static String run(String str){
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         StringBuilder encrypted = new StringBuilder();
 

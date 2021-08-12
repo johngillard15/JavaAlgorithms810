@@ -6,7 +6,7 @@ public class PerfectSquarePatch {
      * Create a function that takes an integer and outputs an n x n square solely consisting of the integer n.
      * If n = 0, return an empty array.
      */
-    public static int[][] intAsSquare(int num){
+    public static int[][] run(int num){
         if(num == 0)
             return new int[0][0];
 

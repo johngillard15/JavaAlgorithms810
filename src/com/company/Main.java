@@ -31,21 +31,21 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("ArrayOfMultiples:");
-        System.out.println("num 7, length 5 ➞ " + Arrays.toString(ArrayOfMultiples.arrayOfMultiples(7, 5)));
+        System.out.println("num 7, length 5 ➞ " + Arrays.toString(ArrayOfMultiples.run(7, 5)));
         // ➞ [7, 14, 21, 28, 35]
-        System.out.println("num 12, length 10 ➞ " + Arrays.toString(ArrayOfMultiples.arrayOfMultiples(12, 10)));
+        System.out.println("num 12, length 10 ➞ " + Arrays.toString(ArrayOfMultiples.run(12, 10)));
         // ➞ [12, 24, 36, 48, 60, 72, 84,  96, 108, 120]
-        System.out.println("num 17, length 5 ➞ " + Arrays.toString(ArrayOfMultiples.arrayOfMultiples(17, 5)));
+        System.out.println("num 17, length 5 ➞ " + Arrays.toString(ArrayOfMultiples.run(17, 5)));
         // ➞ [17, 34, 51, 68, 85, 102]
 
         System.out.println("\nPerfectSquarePatch:");
-        int[][] squareArr = PerfectSquarePatch.intAsSquare(3);
+        int[][] squareArr = PerfectSquarePatch.run(3);
         System.out.printf("%s\n", Arrays.deepToString(squareArr).replace("], ", "],\n").replace("[[", "[").replace(
                 "]]", "]"));
-        squareArr = PerfectSquarePatch.intAsSquare(5);
+        squareArr = PerfectSquarePatch.run(5);
         System.out.printf("\n%s\n", Arrays.deepToString(squareArr).replace("], ", "],\n").replace("[[", "[").replace(
                 "]]", "]"));
-        squareArr = PerfectSquarePatch.intAsSquare(1);
+        squareArr = PerfectSquarePatch.run(1);
         System.out.printf("\n%s\n", Arrays.deepToString(squareArr).replace("], ", "],\n").replace("[[", "[").replace(
                 "]]", "]"));
 //        System.out.println(Arrays.deepToString(PerfectSquarePatch.intAsSquare(3)));
@@ -53,14 +53,14 @@ public class Main {
 //        System.out.println(Arrays.deepToString(PerfectSquarePatch.intAsSquare(1)));
 
         System.out.println("\nReverseTheString:");
-        System.out.println("Edabit ➞ " + ReverseTheString.specialReverseString("Edabit")); // ➞ "Tibade"
-        System.out.println("UPPER lower ➞ " + ReverseTheString.specialReverseString("UPPER lower")); // ➞ "REWOL reppu"
-        System.out.println("1 23 456 ➞ " + ReverseTheString.specialReverseString("1 23 456")); // ➞ "6 54 321"
+        System.out.println("Edabit ➞ " + ReverseTheString.run("Edabit")); // ➞ "Tibade"
+        System.out.println("UPPER lower ➞ " + ReverseTheString.run("UPPER lower")); // ➞ "REWOL reppu"
+        System.out.println("1 23 456 ➞ " + ReverseTheString.run("1 23 456")); // ➞ "6 54 321"
 
         System.out.println("\nAtbashCipher:");
-        System.out.println("apple ➞ " + AtbashCipher.atbash("apple"));// ➞ "zkkov"
-        System.out.println("Hello world! ➞ " + AtbashCipher.atbash("Hello world!")); // ➞ "Svool dliow!"
-        System.out.println("Christmas is the 25th of December ➞ " + AtbashCipher.atbash("Christmas is the 25th of December"));
+        System.out.println("apple ➞ " + AtbashCipher.run("apple"));// ➞ "zkkov"
+        System.out.println("Hello world! ➞ " + AtbashCipher.run("Hello world!")); // ➞ "Svool dliow!"
+        System.out.println("Christmas is the 25th of December ➞ " + AtbashCipher.run("Christmas is the 25th of December"));
         // ➞ "Xsirhgnzh rh gsv 25gs lu Wvxvnyvi"
     }
 }

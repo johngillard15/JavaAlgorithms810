@@ -9,7 +9,7 @@ public class ReverseTheString {
      * - The UPPERCASE/lowercase positions must be kept in the same order as the original string (see example #1 and #2).
      * - Spaces must be kept in the same order as the original string (see example #3).
      */
-    public static String specialReverseString(String str){
+    public static String run(String str){
         String strReversed = new StringBuilder(str.replaceAll(" ", "")).reverse().toString().toLowerCase();
 
         for(int i = 0; i < str.length(); i++){
